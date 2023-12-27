@@ -10,7 +10,7 @@ gameOver = False
 # Initial Setup
 screen = Screen()
 screen.setup(width=600, height=600)
-screen.bgcolor("black")
+screen.bgcolor("#F3E7FF")
 screen.title("Snake Game")
 screen.tracer(0)
 snake = Snake()

@@ -20,7 +20,7 @@ class Snake:
             segment.penup()
             segment.goto(i * -20, 0)
             segment.shape("square")
-            segment.color("white")
+            segment.color("#4E30A0")
             self.pieces.append(segment)
     
     def goFaster(self):
@@ -56,6 +56,5 @@ class Snake:
         segment.penup()
         segment.goto(self.pieces[-1].xcor(), self.pieces[-1].ycor())
         segment.shape("square")
-        segment.color("white")
+        segment.color("#4E30A0")
         self.pieces.append(segment)
-
