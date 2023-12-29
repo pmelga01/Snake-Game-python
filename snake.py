@@ -22,9 +22,16 @@ class Snake:
             segment.shape("square")
             segment.color("#4E30A0")
             self.pieces.append(segment)
+
+    def reset_snake(self):
+        for seg in self.pieces:
+            seg.goto(1000,1000)
+        self.pieces.clear()
+        self.create_snake()
+        self.head = self.pieces[0]
     
     def goFaster(self):
-        self.speed *= 2
+        self.speed += 0.1
     
     #Move head forward, then each segment follows segment in front of it
     def move(self):
